@@ -16,6 +16,8 @@
 	.back {
 		background-color: #1d1606;
 		overflow: hidden;
+		position: relative;
+		text-align: center;
 	}
 	.link {
 		display: block;
@@ -43,14 +45,14 @@
 			right: -80px;
 		}
 	}
-	@media all and (max-width: 660px) {
+	@media all and (max-width: 619px) {
 		.right1, .left {
 			display: none;
 		}
 		.right2 {
-			position: absolute;
-			top: 5px;
-			right: -51px;
+			position: static;
+			margin: 45px 0 0;
+			float: none;
 		}
 	}
 </style>
