@@ -1,0 +1,56 @@
+<div class="back">
+
+	<a href="#" class="link">
+		<img src="left.png" class="left">
+		<img src="right1.png" class="right1">
+		<img src="right2.png" class="right2">
+	</a>
+
+</div>
+
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.back {
+		background-color: #1d1606;
+		overflow: hidden;
+	}
+	.link {
+		display: block;
+		height: 250px;
+	}
+	.left {
+		float: left;
+	}
+	.right1 {
+		float: right;
+		margin: 12px 40px 0 0;
+	}
+	.right2 {
+		float: right;
+		margin: 42px 120px 0 0;
+	}
+
+	@media all and (max-width: 979px) {
+		.right1 {
+			display: none;
+		}
+		.right2 {
+			position: absolute;
+			top: 5px;
+			right: -80px;
+		}
+	}
+	@media all and (max-width: 640px) {
+		.right1, .left {
+			display: none;
+		}
+		.right2 {
+			position: absolute;
+			top: 5px;
+			right: -51px;
+		}
+	}
+</style>
